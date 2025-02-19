@@ -2,6 +2,7 @@ import React from 'react'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../Assets/logo.jpg'
+import profile from '../Assets/razzaq.jpg'
 const navigation = [
   { name: 'Dashboard', href: '#', current: true },
   { name: 'Team', href: '#', current: false },
@@ -29,11 +30,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
-                alt="Your Company"
-                src={logo}
-                className="h-8 w-auto"
-              />
+              <h1 className='text-2xl text-white font-extrabold'>devARcoder</h1>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
@@ -71,7 +68,7 @@ const Navbar = () => {
                   <span className="sr-only">Open user menu</span>
                   <img
                     alt=""
-                    src={logo}
+                    src={profile}
                     className="size-8 rounded-full"
                   />
                 </MenuButton>
